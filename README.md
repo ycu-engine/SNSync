@@ -14,3 +14,8 @@
 ```sh
 pnpm dev
 ```
+
+## Links
+- [Figma](https://www.figma.com/file/zp6wlNLV3k8yiP8j5KYnx0/SNSync?type=design&node-id=2-172&mode=design&t=ThThIOv2EjMBsCtv-0)
+
+このリポジトリ・プロジェクトに関する質問は[@nyatinte](https://github.com/nyatinte)までお願いします。
