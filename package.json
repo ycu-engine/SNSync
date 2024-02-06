@@ -16,7 +16,9 @@
     "format": "biome format ./app --write",
     "check": "biome check ./app --apply",
     "start": "remix-serve ./build/index.js",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest --watch"
   },
   "dependencies": {
     "@remix-run/css-bundle": "^2.6.0",
@@ -30,9 +32,15 @@
   "devDependencies": {
     "@biomejs/biome": "1.5.3",
     "@remix-run/dev": "^2.6.0",
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^14.2.1",
+    "@testing-library/user-event": "^14.5.2",
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
-    "typescript": "^5.1.6"
+    "@vitejs/plugin-react": "^4.2.1",
+    "jsdom": "^24.0.0",
+    "typescript": "^5.1.6",
+    "vitest": "^1.2.2"
   },
   "engines": {
     "node": ">=20.0.0",
