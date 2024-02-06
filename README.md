@@ -1,38 +1,16 @@
-# Welcome to Remix!
+# SNSync
 
-- [Remix Docs](https://remix.run/docs)
+<p align="center">
+  <img width="500" src="https://github.com/ycu-engine/SNSync/assets/104000239/027d3c37-f1fe-43aa-af1d-b6b3540202c9" />
+  <br />
+  <span style="font-weight: bold">複数人でのSNSアカウント交換を手軽に</span>
+</p>
 
-## Development
 
-From your terminal:
 
-```sh
-npm run dev
-```
 
-This starts your app in development mode, rebuilding assets on file changes.
-
-## Deployment
-
-First, build your app for production:
+## Getting Started
 
 ```sh
-npm run build
+pnpm dev
 ```
-
-Then run the app in production mode:
-
-```sh
-npm start
-```
-
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `remix build`
-
-- `build/`
-- `public/build/`
