@@ -1,5 +1,11 @@
 {
   "name": "snsync",
+  "author": {
+    "name": "Nakamura Takumi",
+    "email": "takumi@mealmates.app",
+    "email2": "takumi.062757@gmail.com",
+    "url": "https://github.com/nyatinte"
+  },
   "private": true,
   "sideEffects": false,
   "type": "module",
@@ -32,8 +38,13 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "typescript": "^5.1.6"
-  },
+  },	
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=20.0.0",
+    "npm": "Use pnpm instead of npm",
+		"yarn": "Use pnpm instead of yarn"
+  },
+  "volta": {
+    "node": "20.11.0"
   }
 }
