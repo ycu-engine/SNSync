@@ -3,7 +3,7 @@ import * as AvatarPrimitive from '@radix-ui/react-avatar';
 
 import { cn } from '~/lib/shadcn';
 
-const Avatar = React.forwardRef<
+const _Avatar = React.forwardRef<
   React.ElementRef<typeof AvatarPrimitive.Root>,
   React.ComponentPropsWithoutRef<typeof AvatarPrimitive.Root>
 >(({ className, ...props }, ref) => (
@@ -16,9 +16,9 @@ const Avatar = React.forwardRef<
     {...props}
   />
 ));
-Avatar.displayName = AvatarPrimitive.Root.displayName;
+_Avatar.displayName = AvatarPrimitive.Root.displayName;
 
-const AvatarImage = React.forwardRef<
+const _AvatarImage = React.forwardRef<
   React.ElementRef<typeof AvatarPrimitive.Image>,
   React.ComponentPropsWithoutRef<typeof AvatarPrimitive.Image>
 >(({ className, ...props }, ref) => (
@@ -28,9 +28,9 @@ const AvatarImage = React.forwardRef<
     {...props}
   />
 ));
-AvatarImage.displayName = AvatarPrimitive.Image.displayName;
+_AvatarImage.displayName = AvatarPrimitive.Image.displayName;
 
-const AvatarFallback = React.forwardRef<
+const _AvatarFallback = React.forwardRef<
   React.ElementRef<typeof AvatarPrimitive.Fallback>,
   React.ComponentPropsWithoutRef<typeof AvatarPrimitive.Fallback>
 >(({ className, ...props }, ref) => (
@@ -43,6 +43,22 @@ const AvatarFallback = React.forwardRef<
     {...props}
   />
 ));
-AvatarFallback.displayName = AvatarPrimitive.Fallback.displayName;
+_AvatarFallback.displayName = AvatarPrimitive.Fallback.displayName;
 
-export { Avatar, AvatarImage, AvatarFallback };
+export { _Avatar, _AvatarImage, _AvatarFallback };
+
+type Props = {
+  src: string;
+  alt: string;
+  fallback?: string;
+  container?: React.ComponentPropsWithoutRef<typeof _Avatar>;
+  image?: React.ComponentPropsWithoutRef<typeof _AvatarImage>;
+};
+export const Avatar = React.forwardRef<React.ElementRef<typeof _Avatar>, Props>(
+  (props, ref) => (
+    <_Avatar {...props.container} ref={ref}>
+      <_AvatarImage {...props.image} src={props.src} alt={props.alt} />
+      {props.fallback && <_AvatarFallback>{props.fallback}</_AvatarFallback>}
+    </_Avatar>
+  )
+);
