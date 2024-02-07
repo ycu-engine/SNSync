@@ -5,6 +5,7 @@
     "bradlc.vscode-tailwindcss",
     "biomejs.biome",
     "usernamehw.errorlens",
-    "yusukehirao.vscode-markuplint"
+    "yusukehirao.vscode-markuplint",
+    "ms-vsliveshare.vsliveshare"
   ]
 }
