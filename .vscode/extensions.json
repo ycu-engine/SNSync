@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "yoavbls.pretty-ts-errors",
+    "streetsidesoftware.code-spell-checker",
+    "bradlc.vscode-tailwindcss",
+    "biomejs.biome",
+    "usernamehw.errorlens",
+    "yusukehirao.vscode-markuplint",
+    "ms-vsliveshare.vsliveshare"
+  ]
+}
