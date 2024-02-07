@@ -8,6 +8,8 @@
 
 ## Getting Started
 
+開発に参加を希望する場合は、[@nyatinte](https://github.com/nyatinte)まで連絡をお願いします。Slackのワークスペースに招待します。
+
 [VSCode](https://www.google.com/search?q=VSCode&sourceid=chrome&ie=UTF-8)での開発を推奨します。
 
 Unix系のOSが使用できる環境での開発を推奨します。Macならば問題ありませんが、Windowsの場合はWSL2を使用することをお勧めします。
