@@ -1,6 +1,6 @@
 {
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "biomejs.biome",
-  "cSpell.words": ["isbot", "snsync", "typecheck"],
+  "cSpell.words": ["isbot", "shadcn", "snsync", "typecheck"],
   "typescript.tsdk": "node_modules/typescript/lib"
 }
