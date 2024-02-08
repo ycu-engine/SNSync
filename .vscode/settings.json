@@ -4,6 +4,6 @@
   "editor.codeActionsOnSave": {
     "source.organizeImports.biome": true
   },
-  "cSpell.words": ["isbot", "shadcn", "snsync", "typecheck"],
+  "cSpell.words": ["isbot", "markuplint", "shadcn", "snsync", "typecheck"],
   "typescript.tsdk": "node_modules/typescript/lib"
 }

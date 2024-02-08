@@ -40,3 +40,7 @@ pnpm dev
 ```
 
 また、VSCodeで開発する場合は推奨拡張機能をインストールすることをお勧めします。`.vscode/extensions.json`に推奨拡張機能が記載されています。
+
+## Contact
+
+このリポジトリ・プロジェクトに関する質問は[@nyatinte](https://github.com/nyatinte)までお願いします。
