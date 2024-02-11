@@ -1,5 +1,6 @@
 {
   "name": "snsync",
+  "license": "MIT",
   "author": {
     "name": "Nakamura Takumi",
     "email": "takumi@mealmates.app",
