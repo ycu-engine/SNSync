@@ -1,7 +1,7 @@
 import { Link } from '@remix-run/react';
+import { Check } from 'lucide-react';
 import { useState } from 'react';
 import { Avatar } from '../avatar';
-import { Card, CardContent, CardTitle } from '../card';
 
 const getProfileIcon = (xid: string) => {
   // TODO: プロフィールアイコン取得(ライブラリ?)
@@ -15,10 +15,6 @@ const getProfileIcon = (xid: string) => {
     return 'https://pbs.twimg.com/profile_images/1587688925069352960/CdqOdQwk_400x400.jpg';
   }
   return 'https://pbs.twimg.com/profile_images/1683899100922511378/5lY42eHs_400x400.jpg';
-};
-const CheckMark = () => {
-  // TODO: チェックマーク(画像を作るかライブラリからインポート?)
-  return <>✔</>;
 };
 
 export type UserCardProps = {
@@ -43,20 +39,20 @@ const UserCard = ({
       onClick={handleClick}
       className='w-72 h-20'
     >
-      <Card className='grid grid-rows-2 grid-cols-3 w-full p-3 h-full relative border-inherit hover:border-black'>
-        <div className='self-center justify-self-center col-span-1 row-span-2'>
-          <Avatar src={profile_icon} alt={`${xid}'s icon`} />
+      <div className='relative flex justify-between space-x-4 items-center border rounded-md shadow-md p-4 hover:bg-accent duration-200'>
+        <Avatar src={profile_icon} alt={`${xid}'s icon`} fallback={xid} />
+        <div className='space-y-1'>
+          <h4 className='text-sm font-semibold'>@{xid}</h4>
+          <p className='text-sm'>{nickname}</p>
+          <div className='absolute -top-2 -right-2' hidden={!isLooked}>
+            <Check
+              strokeWidth='2.5px'
+              color='white'
+              className='bg-green-600 rounded-full'
+            />
+          </div>
         </div>
-        <CardTitle className='col-span-2 row-span-1 text-sm truncate'>
-          @{xid}
-        </CardTitle>
-        <CardContent className='col-span-2 row-span-1 text-xs truncate'>
-          {nickname}
-        </CardContent>
-        <div className='absolute top-0 right-0' hidden={!isLooked}>
-          <CheckMark />
-        </div>
-      </Card>
+      </div>
     </Link>
   );
 };
