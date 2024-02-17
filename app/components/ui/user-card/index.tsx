@@ -35,7 +35,7 @@ const UserCard = ({
   };
   return (
     <Link
-      to={`https://twitter.com/${xid}`}
+      to={new URL('https://twitter.com/', xid)}
       onClick={handleClick}
       className='w-72 h-20'
     >
